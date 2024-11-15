@@ -142,8 +142,45 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#objectives" id="toc-objectives" class="nav-link active" data-scroll-target="#objectives">Objectives</a></li>
+  <li><a href="#workflow-overview" id="toc-workflow-overview" class="nav-link" data-scroll-target="#workflow-overview">Workflow Overview</a></li>
+  <li><a href="#i.-local-setup" id="toc-i.-local-setup" class="nav-link" data-scroll-target="#i.-local-setup">I. Local Setup</a>
+  <ul class="collapse">
+  <li><a href="#step-0-look-at-existing-content" id="toc-step-0-look-at-existing-content" class="nav-link" data-scroll-target="#step-0-look-at-existing-content">Step 0: Look at existing content</a></li>
+  <li><a href="#step-1-create-project-website-directory" id="toc-step-1-create-project-website-directory" class="nav-link" data-scroll-target="#step-1-create-project-website-directory">Step 1: Create project website directory</a></li>
+  <li><a href="#step-2-create-and-add-essential-files-from-scratch" id="toc-step-2-create-and-add-essential-files-from-scratch" class="nav-link" data-scroll-target="#step-2-create-and-add-essential-files-from-scratch">Step 2: Create and add essential files <em>from scratch</em></a></li>
+  <li><a href="#step-3-create-.rproj-file" id="toc-step-3-create-.rproj-file" class="nav-link" data-scroll-target="#step-3-create-.rproj-file">Step 3: Create <code>.Rproj</code> file</a></li>
+  <li><a href="#step-4-edit-the-content" id="toc-step-4-edit-the-content" class="nav-link" data-scroll-target="#step-4-edit-the-content">Step 4: Edit the content</a>
+  <ul class="collapse">
+  <li><a href="#step-4.1-edit-the-yaml-file" id="toc-step-4.1-edit-the-yaml-file" class="nav-link" data-scroll-target="#step-4.1-edit-the-yaml-file">Step 4.1: Edit the YAML file</a></li>
+  <li><a href="#step-4.2-edit-internal-.rmd-files" id="toc-step-4.2-edit-internal-.rmd-files" class="nav-link" data-scroll-target="#step-4.2-edit-internal-.rmd-files">Step 4.2: Edit internal <code>.Rmd</code> files</a></li>
+  </ul></li>
+  <li><a href="#step-5-build-website" id="toc-step-5-build-website" class="nav-link" data-scroll-target="#step-5-build-website">Step 5: Build website</a>
+  <ul class="collapse">
+  <li><a href="#styles" id="toc-styles" class="nav-link" data-scroll-target="#styles">Styles</a></li>
+  <li><a href="#commit" id="toc-commit" class="nav-link" data-scroll-target="#commit">Commit!</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#ii.-github-setup" id="toc-ii.-github-setup" class="nav-link" data-scroll-target="#ii.-github-setup">II. GitHub setup</a>
+  <ul class="collapse">
+  <li><a href="#overview" id="toc-overview" class="nav-link" data-scroll-target="#overview">Overview</a></li>
+  <li><a href="#step-6-create-project-on-github" id="toc-step-6-create-project-on-github" class="nav-link" data-scroll-target="#step-6-create-project-on-github">Step 6: Create project on GitHub</a></li>
+  <li><a href="#step-7-initialize-project-with-git" id="toc-step-7-initialize-project-with-git" class="nav-link" data-scroll-target="#step-7-initialize-project-with-git">Step 7: Initialize project with git</a></li>
+  <li><a href="#step-8-push-website-content-to-remote" id="toc-step-8-push-website-content-to-remote" class="nav-link" data-scroll-target="#step-8-push-website-content-to-remote">Step 8: Push website content to remote</a></li>
+  <li><a href="#step-9-deploy-the-website" id="toc-step-9-deploy-the-website" class="nav-link" data-scroll-target="#step-9-deploy-the-website">Step 9: Deploy the website</a></li>
+  <li><a href="#step-10-preview-content" id="toc-step-10-preview-content" class="nav-link" data-scroll-target="#step-10-preview-content">Step 10: Preview content!</a></li>
+  </ul></li>
+  <li><a href="#iii.-add-interactive-visuals" id="toc-iii.-add-interactive-visuals" class="nav-link" data-scroll-target="#iii.-add-interactive-visuals">III. Add interactive visuals</a>
+  <ul class="collapse">
+  <li><a href="#step-11-source-processing-code" id="toc-step-11-source-processing-code" class="nav-link" data-scroll-target="#step-11-source-processing-code">Step 11: Source processing code</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -172,16 +209,295 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<p>This is an UPDATED Quarto website.</p>
-<p>To learn more about Quarto websites visit <a href="https://quarto.org/docs/websites" class="uri">https://quarto.org/docs/websites</a>.</p>
-<div class="cell">
-<div class="sourceCode cell-code" id="cb1"><pre class="sourceCode r code-with-copy"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dv">1</span> <span class="sc">+</span> <span class="dv">1</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
-<div class="cell-output cell-output-stdout">
-<pre><code>[1] 2</code></pre>
+<div class="cell" data-layout-align="center">
+<style type="text/css">
+.code-r { /* Code block */
+  font-size: 15px;
+}
+
+.code-r-small { /* Code block */
+  font-size: 10px;
+}
+</style>
 </div>
+<p><br></p>
+<p>Edits by K Siegmund</p>
+<p><br></p>
+<section id="objectives" class="level1">
+<h1>Objectives</h1>
+<p>The objective of today’s lab is to create a project website using the <strong>rmarkdown</strong> package and deploy it using GitHub pages. We will include interactive visualizations on the website.</p>
+<p>For this lab, we have created some initial content for you to work with as an example. The code is found at: https://github.com/ksiegmund/PM566-lab12-example.</p>
+<p>Your objective will be to create your own <em>project</em> website using this content as a reference.</p>
+<p>Note that if you want to create a <em>personal</em> website using the <strong>rmarkdown</strong> package hosted on GitHub Pages, you can do so following the same instructions, with the one difference that the repository you create should be called <code>YOUR_GH_NAME.github.io</code>.</p>
+<p><br></p>
+<hr>
+</section>
+<section id="workflow-overview" class="level1">
+<h1>Workflow Overview</h1>
+<p>Building websites uses the same reproducible workflow you can use for your analyses and collaborations. It is very iterative. You can do it all from RStudio, with a combination of clicking or typing commands as you feel comfortable.</p>
+<p>There are two main steps for creating a personal website that will be hosted on GitHub:</p>
+<p>I. Local setup <br> II. GitHub setup</p>
+<p><br></p>
+<hr>
+<p><br></p>
+</section>
+<section id="i.-local-setup" class="level1">
+<h1>I. Local Setup</h1>
+<p>The basic workflow is as follows:</p>
+<ol type="1">
+<li>Create a project directory and an R Project file (<code>.Rproj</code>)</li>
+<li>Create a <code>_site.yml</code> and <code>index.Rmd</code> file in your new directory</li>
+<li>Add additional page content if desired through other <code>.Rmd</code> files</li>
+<li>Edit these files to create content and manage layout (and knit to view)</li>
+<li>Add a style sheet (CSS) if desired</li>
+<li>Build website
+<ul>
+<li>Build tab &gt; Build Website or</li>
+<li>in the console: <code>rmarkdown::render_site()</code> This creates the output: <code>index.html</code></li>
+</ul></li>
+</ol>
+<p><br></p>
+<section id="step-0-look-at-existing-content" class="level2">
+<h2 class="anchored" data-anchor-id="step-0-look-at-existing-content">Step 0: Look at existing content</h2>
+<p>Clone the website repository at https://github.com/ksiegmund/PM566-lab12-example with example project website content into a NEW directory for the lab, e.g.&nbsp;<code>"week12-lab"</code>.</p>
+<p><strong>Note</strong>: we are not initializing this as a git repository, we will do that in Step 1. We are just downloading the contents.</p>
+<pre class="shell"><code>mkdir ~/week12-lab
+git clone https://github.com/ksiegmund/PM566-lab12-example</code></pre>
+<p>Then open the file <code>PM566-lab12-example.Rproj</code>. For MacOS you can do that through command line using</p>
+<pre class="shell"><code>open PM566-lab12-example.Rproj</code></pre>
+<p>Otherwise, you can manually open the file from your directory.</p>
+<p>Once you have it opened:</p>
+<ul>
+<li><p>Check out the contents of this repository. What files does it contain?</p></li>
+<li><p>Take a few moments to compare the contents of this repository to the final website at https://ksiegmund.github.io/PM566-lab12-example</p></li>
+</ul>
+<p><br></p>
+</section>
+<section id="step-1-create-project-website-directory" class="level2">
+<h2 class="anchored" data-anchor-id="step-1-create-project-website-directory">Step 1: Create project website directory</h2>
+<p>Create and go to the directory you want to create your website in, e.g.&nbsp;<code>"PM566-final-project"</code>, and initialize git.</p>
+<p>In command line:</p>
+<pre class="shell"><code>mkdir ~/PM566-final-project
+cd ~/PM566-final-project
+git init</code></pre>
+<p><br></p>
+</section>
+<section id="step-2-create-and-add-essential-files-from-scratch" class="level2">
+<h2 class="anchored" data-anchor-id="step-2-create-and-add-essential-files-from-scratch">Step 2: Create and add essential files <em>from scratch</em></h2>
+<p>Recall from lecture that the minimum requirements for an R Markdown website are:</p>
+<ul>
+<li><code>index.Rmd</code>: contains the content for the website homepage</li>
+<li><code>_site.yml</code>: contains metadata for the website</li>
+</ul>
+<p>Create these essential files, as well as a <code>README.md</code>, add all to git queue, and commit to your website repository.</p>
+<p><strong>Note</strong>: You can use the <code>echo</code> command in command line to initialize the files (in MacOS you can also use the <code>touch</code> command):</p>
+<pre class="shell"><code>echo My PM566 Final Project Website &gt; README.md
+echo &gt; _site.yml
+echo &gt; index.Rmd
+git add --all
+git commit -m "initalizing repository"</code></pre>
+<p><br></p>
+</section>
+<section id="step-3-create-.rproj-file" class="level2">
+<h2 class="anchored" data-anchor-id="step-3-create-.rproj-file">Step 3: Create <code>.Rproj</code> file</h2>
+<p>Create an R Project file using RStudio IDE:</p>
+<p>Go to RStudio IDE &gt; File &gt; New Project &gt; Existing Directory</p>
+<div data-align="center">
+<p><img src="img/Rproject-img.png" width="200px"></p>
 </div>
+<p>The R Project is useful because RStudio will recognize your project as a website, and provide appropriate build tools.</p>
+<p><strong>Note</strong>: After creating the R Project and initial files, you <em>may</em> need to close the project and reopen it before R will recognize it as a website and show the appropriate build tools.</p>
+<p><br></p>
+</section>
+<section id="step-4-edit-the-content" class="level2">
+<h2 class="anchored" data-anchor-id="step-4-edit-the-content">Step 4: Edit the content</h2>
+<section id="step-4.1-edit-the-yaml-file" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.1-edit-the-yaml-file">Step 4.1: Edit the YAML file</h3>
+<p>Edit the <code>_site.yml</code> file to include the metadata, layout, and theme you want for your website.</p>
+<p>First let’s take a look at a basic example of a <code>_site.yml</code> file for a website with one page:</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="an">name:</span><span class="co"> "my-website"</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a><span class="an">navbar:</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>  title: "My Website"</span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>  left:</span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>text: "Home"</span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>      href: index.html</span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>output:</span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a>  html_document:</span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a>    theme: cosmo</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>This is the minimum you need to include in your <code>_site.yml</code>.</p>
+<p>Now let’s take a look at the <code>_site.yml</code> from the website repository you downloaded into <code>"week12-lab"</code>. It looks like this:</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="an">name:</span><span class="co"> "my-website"</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="an">output_dir:</span><span class="co"> "."</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="an">navbar:</span></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>  title: "PM566 Final Project"</span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>  left:</span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>text: "Home"</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a>      href: index.html</span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>text: "Lab 12"</span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a>      href: 12-lab.html</span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a>  right:</span>
+<span id="cb6-11"><a href="#cb6-11" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>icon: fa-github fa-lg</span>
+<span id="cb6-12"><a href="#cb6-12" aria-hidden="true" tabindex="-1"></a>      href: https://github.com/USCbiostats/PM566</span>
+<span id="cb6-13"><a href="#cb6-13" aria-hidden="true" tabindex="-1"></a><span class="ss">    - </span>text: "PM566 Home"</span>
+<span id="cb6-14"><a href="#cb6-14" aria-hidden="true" tabindex="-1"></a>      href: https://uscbiostats.github.io/PM566/</span>
+<span id="cb6-15"><a href="#cb6-15" aria-hidden="true" tabindex="-1"></a>output:</span>
+<span id="cb6-16"><a href="#cb6-16" aria-hidden="true" tabindex="-1"></a>  html_document:</span>
+<span id="cb6-17"><a href="#cb6-17" aria-hidden="true" tabindex="-1"></a>    theme: cosmo</span>
+<span id="cb6-18"><a href="#cb6-18" aria-hidden="true" tabindex="-1"></a>    include:</span>
+<span id="cb6-19"><a href="#cb6-19" aria-hidden="true" tabindex="-1"></a>      after_body: footer.html</span>
+<span id="cb6-20"><a href="#cb6-20" aria-hidden="true" tabindex="-1"></a>    css: styles.css</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>Inspecting this, and the output on the completed website at https://ksiegmund.github.io/PM566-lab12-example, how do you add links to internal webpages? How do you add links to external websites? How do you add icons?</p>
+<p><strong>Note</strong>: recall that the <code>output_dir</code> field indicates which directory to copy site content into (<code>"_site"</code> is the default if none is specified). It can be <code>"."</code> to keep all content within the root website directory alongside the source code.</p>
+<p><strong>Note</strong>: Preview themes <a href="https://www.datadreaming.org/post/r-markdown-theme-gallery/#:~:text=There%20are%2012%20additional%20themes,your%20theme%20from%20the%20default%20.">here</a> and play around with different options. Themes are easy to change even after you have added content.</p>
+<p>Now your task is to create a YAML for your website that includes only the essential components for your website. Either copy the content of the simple <code>_site.yml</code> into your own <code>_site.yml</code> file in your website directory <code>PM566-final-project</code>, or replicate it yourself line by line.</p>
+<p><strong>Note</strong>: YAML language is very picky so make sure your content is formatted appropriately. If you are not sure, either look up the appropriate text in the <a href="https://bookdown.org/yihui/rmarkdown/">reference guide</a>, search google, or copy from a website you know works!</p>
+<p><br></p>
+</section>
+<section id="step-4.2-edit-internal-.rmd-files" class="level3">
+<h3 class="anchored" data-anchor-id="step-4.2-edit-internal-.rmd-files">Step 4.2: Edit internal <code>.Rmd</code> files</h3>
+<p>Edit and create <code>.Rmd</code> files that contain your website content, which will produce the html pages of your website when you knit them.</p>
+<p>For example, the <code>index.Rmd</code> could look like this:</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="an">title:</span><span class="co"> "PM566 Final Project"</span></span>
+<span id="cb7-3"><a href="#cb7-3" aria-hidden="true" tabindex="-1"></a><span class="an">author:</span><span class="co"> "Your Name"</span></span>
+<span id="cb7-4"><a href="#cb7-4" aria-hidden="true" tabindex="-1"></a><span class="an">output:</span><span class="co"> </span></span>
+<span id="cb7-5"><a href="#cb7-5" aria-hidden="true" tabindex="-1"></a><span class="co">    html_document:</span></span>
+<span id="cb7-6"><a href="#cb7-6" aria-hidden="true" tabindex="-1"></a><span class="co">        toc: TRUE</span></span>
+<span id="cb7-7"><a href="#cb7-7" aria-hidden="true" tabindex="-1"></a><span class="co">        toc_float: TRUE</span></span>
+<span id="cb7-8"><a href="#cb7-8" aria-hidden="true" tabindex="-1"></a><span class="co">---</span></span>
+<span id="cb7-9"><a href="#cb7-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb7-10"><a href="#cb7-10" aria-hidden="true" tabindex="-1"></a>This is my PM566 Final Project website.</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p>The <code>toc</code> specifies whether there is a table of contents, and <code>toc_float</code> provides the option to float the table of contents to the left of the main document content. The floating table of contents will always be visible even when the document is scrolled. There are other options for how to display the <code>toc</code> in R Markdown HTML output which you can read about <a href="https://bookdown.org/yihui/rmarkdown/html-document.html#table-of-contents">here</a>.</p>
+<p><br></p>
+<p>After you are done with your <code>index.Rmd</code> file, knit it to check the output. Either click the <code>Knit</code> option in the toolbar or in the console type <code>rmarkdown::render_site("index.Rmd")</code>. This will render the output into a file <code>index.html</code> which you can check out by opening the file in your directory:</p>
+<div data-align="center">
+<p><img src="img/view_indexhtml.png" width="200px"></p>
+</div>
+<p><br></p>
+</section>
+</section>
+<section id="step-5-build-website" class="level2">
+<h2 class="anchored" data-anchor-id="step-5-build-website">Step 5: Build website</h2>
+<p>Now we have the content and layout setup, we can build the website! This can be done in two ways:</p>
+<ul>
+<li>Build tab &gt; Build Website</li>
+</ul>
+<div data-align="center">
+<p><img src="img/build.png" width="300px"></p>
+</div>
+<ul>
+<li>in the console: <code>rmarkdown::render_site()</code></li>
+</ul>
+<p><strong>rmarkdown</strong> has created all the additional files you need for your website. Check them out in your directory. Most importantly, the <code>index.html</code> file provides a preview of the site, which you can look at in a browser as above:</p>
+<div data-align="center">
+<p><img src="img/view_indexhtml.png" width="200px"></p>
+</div>
+<p><strong>Note</strong>: As you make changes, you should re-render (or equivalently, re-build) the website. Recall from lecture that RStudio supports “live preview” of changes that you make to supporting files within your website (e.g., CSS, JavaScript, <code>.Rmd</code> partials, R scripts, and YAML config files), but this only rebuilds the active page. So once you are happy with the results of rendering you should make sure to rebuild the entire site using <code>rmarkdown::render_site()</code> to ensure that all pages inherit your changes.</p>
+<p><br></p>
+<section id="styles" class="level3">
+<h3 class="anchored" data-anchor-id="styles">Styles</h3>
+<p>You will see that your R Markdown website comes with a style class, specified by your chosen theme specified in your YAML (or the default theme if not chosen). You can also modify your site using CSS style sheets. As discussed in lecture, styles can be modified in 3 ways: in-line with HTML, placing a style section in your HTML document, defining the CSS in an external file that is then referenced as a link in your HTML. Feel free to play around with the external style sheet <code>styles.css</code> that came with the example website.</p>
+<p><br></p>
+</section>
+<section id="commit" class="level3">
+<h3 class="anchored" data-anchor-id="commit">Commit!</h3>
+<p>Don’t be afraid of commitment! Add your changes as you go along.</p>
+<pre class="shell"><code>cd ~/PM566-final-project
+git add --all
+git commit -m "Rendered website"</code></pre>
+<hr>
+</section>
+</section>
+</section>
+<section id="ii.-github-setup" class="level1">
+<h1>II. GitHub setup</h1>
+<section id="overview" class="level2">
+<h2 class="anchored" data-anchor-id="overview">Overview</h2>
+<ol type="1">
+<li>Create project on GitHub</li>
+<li>Initialize project on Git</li>
+<li>Push project files to the GitHub repository for your project</li>
+<li>Deploy the website by enabling GitHub pages for the repository</li>
+</ol>
+<p><br></p>
+</section>
+<section id="step-6-create-project-on-github" class="level2">
+<h2 class="anchored" data-anchor-id="step-6-create-project-on-github">Step 6: Create project on GitHub</h2>
+<p>Create an online (remote) repository for your project using GitHub</p>
+<div data-align="left">
+<p><img src="img/create_repository.png" width="200px"></p>
+</div>
+<p><br></p>
+</section>
+<section id="step-7-initialize-project-with-git" class="level2">
+<h2 class="anchored" data-anchor-id="step-7-initialize-project-with-git">Step 7: Initialize project with git</h2>
+<p>In command line:</p>
+<p>Add the remote using <code>git remote add</code></p>
+<pre class="shell"><code>git remote add origin https://github.com/YOUR_GITHUB_NAME/YOUR_PROJECT_NAME.git</code></pre>
+<p>Optionally, use the commands <code>git status</code> and <code>git remote -v</code> to check out the status.</p>
+<p><br></p>
+</section>
+<section id="step-8-push-website-content-to-remote" class="level2">
+<h2 class="anchored" data-anchor-id="step-8-push-website-content-to-remote">Step 8: Push website content to remote</h2>
+<p>Push the changes to the remote using <code>git push</code></p>
+<pre class="shell"><code>git push -u origin main</code></pre>
+<p><strong>Note</strong> In 2020 Github changed its default repository name from “master” to “main”, so if you’re creating a new repository after 2020, it will named “main”.</p>
+<p><br></p>
+</section>
+<section id="step-9-deploy-the-website" class="level2">
+<h2 class="anchored" data-anchor-id="step-9-deploy-the-website">Step 9: Deploy the website</h2>
+<p>Enable GitHub pages for the repository by going to the repository’s Settings &gt; GitHub Pages. For the branch option (left button), you’ll switch from the selected “none” to the “main branch” folder. For the folder option (right button) (/(root) vs.&nbsp;/docs), you’ll choose /(root) if you included the parameter <code>output_dir: "."</code> in your YAML. Otherwise, the output directory will default to the /docs folder, and you should select that as the source folder. Then hit Save:</p>
+<div data-align="center">
+<p><img src="img/github_pages_publish.png" width="400px"></p>
+</div>
+<p><br></p>
+</section>
+<section id="step-10-preview-content" class="level2">
+<h2 class="anchored" data-anchor-id="step-10-preview-content">Step 10: Preview content!</h2>
+<p>It’s live! Go to the website at www.YOUR_GH_NAME.github.io/YOUR_PROJECT_NAME/ (the website should appear to you when you click the appropriate setting in GitHub Pages)</p>
+<p><br></p>
+<hr>
+</section>
+</section>
+<section id="iii.-add-interactive-visuals" class="level1">
+<h1>III. Add interactive visuals</h1>
+<p>Your task here is to create 2 interactive visuals, using <strong>plotly</strong>, <strong>leaflet</strong>, <strong>DT</strong>, or anything else you have explored, and post them on your website at <code>index.Rmd</code>.</p>
+<p><br></p>
+<section id="step-11-source-processing-code" class="level2">
+<h2 class="anchored" data-anchor-id="step-11-source-processing-code">Step 11: Source processing code</h2>
+<p>First you can source any necessary code, meaning run it. For example, let’s use the COVID-19 data from the NYT we explored in week 11. In the example repository you downloaded into <code>"week12-lab"</code>, we have provided the code <code>process_covid_data.R</code> which goes through the first steps we carried out in the lab of downloading and processing the data. To source this code, in your <code>index.Rmd</code> file, include a code chunk with the <code>source(process_COVID_data.R)</code> command:</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r load-data, echo=FALSE}</span></span>
+<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="in">source("process_COVID_data.R")</span></span>
+<span id="cb11-3"><a href="#cb11-3" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p><br></p>
+<p><strong>Note</strong>: Make sure that you include the following libraries and formatting code at the beginning of your <code>index.Rmd</code> file, which will allow you to run the <code>source("process_COVID_data.R")</code> code:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="in">```{r setup, message=FALSE, echo=FALSE, warning=FALSE}</span></span>
+<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="in">library(data.table)</span></span>
+<span id="cb12-3"><a href="#cb12-3" aria-hidden="true" tabindex="-1"></a><span class="in">library(tidyverse)</span></span>
+<span id="cb12-4"><a href="#cb12-4" aria-hidden="true" tabindex="-1"></a><span class="in">library(dplyr)</span></span>
+<span id="cb12-5"><a href="#cb12-5" aria-hidden="true" tabindex="-1"></a><span class="in">library(plotly)</span></span>
+<span id="cb12-6"><a href="#cb12-6" aria-hidden="true" tabindex="-1"></a><span class="in">library(DT)</span></span>
+<span id="cb12-7"><a href="#cb12-7" aria-hidden="true" tabindex="-1"></a><span class="in">library(knitr)</span></span>
+<span id="cb12-8"><a href="#cb12-8" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<p>You may also want to include some code chunk options for your whole document using <code>opts_chunk$set()</code>, for example the options we specified in the <code>12-lab.Rmd</code> file:</p>
+<div class="sourceCode" id="cb13"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span>
+<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="in"># Initialize code chunk options</span></span>
+<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="in">opts_chunk$set(</span></span>
+<span id="cb13-4"><a href="#cb13-4" aria-hidden="true" tabindex="-1"></a><span class="in">  warning = FALSE,</span></span>
+<span id="cb13-5"><a href="#cb13-5" aria-hidden="true" tabindex="-1"></a><span class="in">  message = FALSE,</span></span>
+<span id="cb13-6"><a href="#cb13-6" aria-hidden="true" tabindex="-1"></a><span class="in">  eval=TRUE,</span></span>
+<span id="cb13-7"><a href="#cb13-7" aria-hidden="true" tabindex="-1"></a><span class="in">  echo = TRUE,</span></span>
+<span id="cb13-8"><a href="#cb13-8" aria-hidden="true" tabindex="-1"></a><span class="in">  cache = FALSE,</span></span>
+<span id="cb13-9"><a href="#cb13-9" aria-hidden="true" tabindex="-1"></a><span class="in">  fig.width = 7, </span></span>
+<span id="cb13-10"><a href="#cb13-10" aria-hidden="true" tabindex="-1"></a><span class="in">  fig.align = 'center',</span></span>
+<span id="cb13-11"><a href="#cb13-11" aria-hidden="true" tabindex="-1"></a><span class="in">  fig.asp = 0.618,</span></span>
+<span id="cb13-12"><a href="#cb13-12" aria-hidden="true" tabindex="-1"></a><span class="in">  out.width = "700px")</span></span>
+<span id="cb13-13"><a href="#cb13-13" aria-hidden="true" tabindex="-1"></a><span class="in">```</span></span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 
 
+</section>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
