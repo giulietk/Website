@@ -3,11 +3,11 @@ project:
   output-dir: docs
 
 website:
-  title: "Website"
+  title: "PM566 Final Project"
   navbar:
     left:
       - href: index.qmd
-        text: Lab 12
+        text: Home
       - about.qmd
 
 format:
